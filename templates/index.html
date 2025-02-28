@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>API Data Fetcher and Poster</h1>
+        <section>
+            <h2>Fetch GitHub Repositories (GET)</h2>
+            <form id="fetch-form">
+                <input type="text" id="username" placeholder="Enter GitHub username" required>
+                <button type="submit">Fetch Repos</button>
+            </form>
+            <div id="repos-result"></div>
+        </section>
+        <section>
+            <h2>Post Custom Data (POST)</h2>
+            <form id="post-form">
+                <div id="fields">
+                    <div class="field-group">
+                        <input type="text" name="key" placeholder="Key" required>
+                        <input type="text" name="value" placeholder="Value" required>
+                    </div>
+                </div>
+                <button type="button" id="add-field">Add Field</button>
+                <button type="submit">Post Data</button>
+            </form>
+            <div id="post-result"></div>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
