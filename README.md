@@ -21,5 +21,5 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the Repository
 Clone this repository to your local machine using:
 ```bash
-git clone https://github.com/your-username/api_data_tool.git
+git clone https://github.com/aswitha1538/api_data_tool.git
 cd api_data_tool
